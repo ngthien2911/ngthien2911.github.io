@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+            border: solid 5px green;
+            border-radius: 10px;
+        }
+        
+        .big {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .sub {
+            display: flex;
+            flex-direction: column;
+            border: solid 5px red;
+            border-radius: 10px;
+        }
+        
+        .bigpart {
+            text-align: center;
+        }
+        
+        #demo {
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="big">
+        <div class="main">
+            <input type="text" id="url" placeholder="API link">
+            <input type="text" id="key" placeholder="API key">
+        </div>
+
+        <div class="sub">
+            <input type="text" id="object" placeholder="Para">
+            <input type="text" id="putrequest" placeholder="parameter for Put request">
+        </div>
+    </div>
+    <div class="bigpart">
+        <h2>The Request</h2>
+        <button type="button" id="request" onclick="getFile()">Request data</button>
+    </div>
+    <p id="demo"></p>
+
+
+
+
+
+
+
+    <script src="js/api.js"></script>
+</body>
+
+</html>
