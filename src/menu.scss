@@ -1,0 +1,137 @@
+ul.dropdown-cart{
+    min-width:350px;
+}
+ul.dropdown-cart li .item{
+    display:block;
+    padding:3px 10px;
+    margin: 3px 0;
+}
+ul.dropdown-cart li .item:hover{
+    background-color:#f3f3f3;
+}
+ul.dropdown-cart li .item:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+ul.dropdown-cart li .item-left{
+    float:left;
+}
+ul.dropdown-cart li .item-left img,
+ul.dropdown-cart li .item-left span.item-info{
+    float:left;
+}
+ul.dropdown-cart li .item-left span.item-info{
+    margin-left:10px;   
+}
+ul.dropdown-cart li .item-left span.item-info span{
+    display:block;
+}
+ul.dropdown-cart li .item-right{
+    float:right;
+}
+ul.dropdown-cart li .item-right button{
+    margin-top:14px;
+}
+
+
+.carticon{
+    font-size: 1.8vw;
+    text-align:center;
+    color:white;
+    align-items: center;
+    
+}
+
+.navbar-right{
+    margin-top:5%;
+}
+
+@media only screen and (max-width: 800px){
+    .navbar-right{margin-top:5%}
+}
+.group{
+    align-items: center;
+}
+
+.xbtn{
+    background-color: #f39c86;
+    padding:4px;
+    padding-bottom:0.8px
+}
+
+.checkoutbtn{
+    background-color:#9bf0e2 ;
+    border-radius: 20px;
+    width:100%;
+    color:rgb(124, 111, 111);
+    border:none;
+
+}
+
+.checkoutbtn:hover{
+    background-color: #61e6cf;
+    
+}
+
+.item-left img{
+    width: 30px;
+    height: 30px;
+}
+
+.item-left:first-child{
+    font-size: 0.6em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 15vw;
+}
+
+.itemprice{
+    font-size: 0.5;
+    text-align: left;
+}
+
+.item-right{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount{
+    border:none ;
+    border-radius: 10px;
+}
+
+.countbtn{
+    background-color:white;
+    border: none blue;
+    text-align: center;
+    padding-top:0px;
+    border-radius: 10px;
+}
+.item{
+    background-color: whitesmoke;
+}
+
+.noti{
+    font-weight: bold;
+    color: whitesmoke;
+    border: solid rgb(63, 205, 248);
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    background-color:rgb(63, 205, 248) ;
+    position: absolute;
+    margin: -25% 4% 4% 77%;
+}
+
+.menunavbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}

@@ -1,0 +1,74 @@
+.d-inline-block{
+    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 25vw;
+}
+
+.text-dark{
+    cursor: pointer;
+}
+
+.tdbtn button{
+    border-style: none;
+    background-color:#eed9bd;
+    border-radius: 10px;
+    padding:0 4px;
+}
+.tdbtn button:hover{
+    background-color: #f3ba6f;
+}
+.tdbtn button:focus{
+    background-color: #f3ba6f
+}
+
+#button-addon3{
+    background-color: #e96b56;
+}
+
+
+.clearall:hover{
+    background-color: #f1ba72;
+}
+.total{
+    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 10vw;
+}
+
+.clearall{
+    border:solid 0.5px #ebb979;
+    border-radius: 20px;
+    padding-left:2em;
+    padding-right: 2em;
+    background-color: #eed9bd;
+
+}
+
+.shopping{
+    border:solid 0.5px #ebb979;
+    border-radius: 20px;
+    padding-left:2em;
+    padding-right: 2em;
+    
+}
+.shopping:hover{
+    background-color: #f1ba72;
+}
+
+.continue{
+    border:solid 0.5px #b5ecea;
+    border-radius: 20px;
+    padding-left:2em;
+    padding-right: 2em;
+    background-color:#d7e9e8 ;
+}
+.continue:hover{
+    background-color:#62f3ec
+}
+
+
+.goshopbtn{
+    background-color:#d7e9e8 ;
+}

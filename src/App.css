@@ -1,0 +1,357 @@
+@font-face {
+    font-family: myFont;
+    src: url(./SVN-GilroyRegular.otf);
+  }
+  
+  * {
+    font-family: myFont;
+    text-align: center;
+    
+    
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .navbar{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: aquamarine;
+    padding: 1%;
+    border:solid 1px yellowgreen;
+  
+  }
+  
+  .TITLE{
+    font-size: calc( 1em + 5vmin );
+    font-weight: 900;
+    color: #e96b56;
+    
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: lightblue;
+    
+    text-shadow: 
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      var(--background-color), 
+      
+      calc( var(--x-offset) - var(--stroke) )
+      calc( var(--y-offset) + var(--stroke) )
+      0px
+      var(--stroke-color);
+    
+  }
+  /* for browsers that support spread, added in
+  https://drafts.csswg.org/css-text-decor-4/#text-shadow-property
+  currently: none browsers! none of them!
+  I can't even find a test: 
+  https://wpt.fyi/results/css/css-text-decor */
+  @supports ( text-shadow: 1px 1px 1px 1px black ) {
+   .TITLE{
+      text-shadow:
+        
+        var(--x-offset)
+        var(--y-offset)
+        0px
+        0px
+        var(--background-color), 
+        
+        var(--x-offset) 
+        var(--y-offset)
+        var(--stroke)
+        0px
+        var(--stroke-color);
+      
+    }
+  }
+  
+  
+  
+  
+  .menu:hover {
+    color: #fff;
+    background-color: var(--lgt-blue);
+    border-color: var(--lgt-blue);
+  }
+  
+  .menu:active {
+    color: #fff;
+    background-color: var(--drk-blue);
+    border-color: var(--drk-gre);
+  }
+  
+  .menu:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(175, 101, 236, 0.4);
+    border-radius: 10px;
+    border:2px;
+    background-color:gold;
+  }
+
+  .list-item{
+    margin:1%;
+    flex-basis: 25%;
+    width:100%;
+    border: solid 3px palevioletred;
+    border-radius: 15px;
+    
+  }
+  
+  .list{
+    display: flex;
+      flex-wrap: wrap;
+    
+      justify-content: space-between;
+  }
+
+  .thebox{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .group{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    background-color:#f0b66a;
+    font-weight: bold;
+    color: rgb(29, 29, 185);
+    border:#f0e4d4 solid 5px
+    
+  }
+
+  
+
+  
+
+  .child{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 6px rgb(255 255 255 / 70%);
+  }
+
+  .d-block{
+   width:100%;
+   
+  }
+
+  #footer {
+    background: #404040;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px
+}
+
+#footer .footer-newsletter {
+    padding: 50px 0;
+    background: #404040
+}
+
+#footer .footer-newsletter h4 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600
+}
+
+#footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px
+}
+
+#footer .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 8px;
+    width: calc(100% - 140px)
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 30px;
+    margin: 3px;
+    background: #e96b56;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+    background: #e6573f
+}
+
+#footer .footer-top {
+    background: #3b3b3b;
+    border-top: 1px solid #474747;
+    border-bottom: 1px solid #474747;
+    padding: 60px 0 30px 0
+}
+
+#footer .footer-top .footer-info {
+    margin-bottom: 30px
+}
+
+#footer .footer-top .footer-info h3 {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700
+}
+
+#footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #fff
+}
+
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #545454;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s
+}
+
+#footer .footer-top .social-links a:hover {
+    background: #e96b56;
+    color: #fff;
+    text-decoration: none
+}
+
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #ec7f6d;
+    font-size: 18px;
+    line-height: 1
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    color: #e96b56
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px
+}
+
+#footer .footer-top .footer-contact p {
+    line-height: 26px
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px
+}
+
+#footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff
+}
+
+
+.theicon{
+    z-index: 20;
+    color:white;
+}
+
+.category{
+    background-color: whitesmoke;
+    margin-top: 2%;
+}
+
+.categorytitle{
+   
+        font-size: 60pt;
+        
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-shadow:   0px -6px 0 #212121,  
+                       0px -6px 0 #212121,
+                       0px  6px 0 #212121,
+                       0px  6px 0 #212121,
+                      -6px  0px 0 #212121,  
+                       6px  0px 0 #212121,
+                      -6px  0px 0 #212121,
+                       6px  0px 0 #212121,
+                      -6px -6px 0 #212121,  
+                       6px -6px 0 #212121,
+                      -6px  6px 0 #212121,
+                       6px  6px 0 #212121,
+                      -6px  18px 0 #212121,
+                       0px  18px 0 #212121,
+                       6px  18px 0 #212121,
+                       0 19px 1px rgba(0,0,0,.1),
+                       0 0 6px rgba(0,0,0,.1),
+                       0 6px 3px rgba(0,0,0,.3),
+                       0 12px 6px rgba(0,0,0,.2),
+                       0 18px 18px rgba(0,0,0,.25),
+                       0 24px 24px rgba(0,0,0,.2),
+                       0 36px 36px rgba(0,0,0,.15);
+      
+}
+
