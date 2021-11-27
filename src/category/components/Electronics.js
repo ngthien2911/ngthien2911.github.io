@@ -4,7 +4,8 @@ import './Electronics.css';
 import {Link} from'react-router-dom';
 import CircularProgress from '@mui/material/CircularProgress';
 import {useDispatch, useSelector} from 'react-redux';
-import { addToCart, clearCart, countTotalPrice, decreaseCartQuantity, removeFromCart } from '/REACT/final-project/src/cart/cartSlice';
+import { addToCart } from '../../cart/cartSlice';
+
 
 
 function Electronics(props) {

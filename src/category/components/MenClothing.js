@@ -3,7 +3,7 @@ import {Link} from'react-router-dom';
 import CircularProgress from '@mui/material/CircularProgress';
 import './Electronics.css';
 import {useDispatch, useSelector} from 'react-redux';
-import { addToCart, clearCart, countTotalPrice, decreaseCartQuantity, removeFromCart } from '/REACT/final-project/src/cart/cartSlice';
+import { addToCart, clearCart, countTotalPrice, decreaseCartQuantity, removeFromCart } from '../../cart/cartSlice';
 
 function MenClothing(props) {
     const [category,setCategory]=useState([])
