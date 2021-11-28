@@ -135,3 +135,69 @@ ul.dropdown-cart li .item-right button{
     top: 0;
     z-index: 10;
 }
+
+.theerror{
+    text-align: center;
+    color:red;
+}
+.welcomemess{
+    color: white;
+}
+
+.loginbtn{
+    background-color: #83bda2;
+}
+
+.loginbtn:hover{
+    background-color:#4eac80 ;
+}
+
+.cartbtn{
+    background-color: transparent;
+    border:none;
+    font-size: 1vw;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.cartbtn:hover{
+    background-color: transparent;
+}
+
+.cartbtn:left{
+    background-color:#4eac80 ;
+}
+
+.divitem{
+    font-size: 0.7vw;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+   
+    justify-content: space-between;
+}
+
+.itemimg{
+    height:40px;
+    width: 40px;
+}
+
+.item-info{
+    font-size: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 10vw;
+}
+
+.item-text{
+    justify-content: center;
+    font-size: 1vw;
+    
+}
+
+.addbtn{
+    background-color: rgb(174, 243, 237);
+    border-radius: 20px;
+    margin: 0% 4%;
+}

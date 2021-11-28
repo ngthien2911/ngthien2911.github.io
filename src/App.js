@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {createContext,useContext,useState,} from 'react';
 import './App.css';
-import {BrowserRouter as Router,Routes,Route, Link} from "react-router-dom";
-
+import {BrowserRouter as Router,Routes,Route, Link, Navigate} from "react-router-dom";
+import {useNavigate,useLocation} from  'react-router'
 import Nav from './Pages/Nav';
 import Home from './Pages/Home';
 import Category from './Pages/Category';
@@ -19,6 +19,8 @@ import{ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
+
+  
   return (
 
     <Router>
@@ -45,7 +47,12 @@ function App() {
     
     </div>
     </Router>
-  );
+    
+);
+
+
+
+  
 }
 
 export default App;
