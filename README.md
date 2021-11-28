@@ -13,7 +13,7 @@
 
 - 📫 How to reach me **ngthien2911@gmail.com**
 
-- 📄 Know about my experiences [https://github.com/ngthien2911/ngthien2911.github.io/blob/main/Resume%20-%20Thien%20Nguyen%20.docx%20(1).pdf](https://github.com/ngthien2911/ngthien2911.github.io/blob/main/Resume%20-%20Thien%20Nguyen%20.docx.pdf)
+- 📄 Know about my experiences (Resume - Thien Nguyen .docx (1).pdf)
 
 - ⚡ Fun fact **I can write a song**
 
