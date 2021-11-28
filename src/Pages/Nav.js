@@ -67,49 +67,35 @@ function Nav(props) {
         {(user.email != "")?
         (<div >
             
-        <ButtonGroup className="group" variant="text" aria-label="large outlined primary button group">
-        <Link to="/"                style={{textDecorationLine:"none"}} >              <Button ><span className="child"  >Home</span></Button>               </Link>
-        <Link to="products/category"        style={{textDecorationLine:"none"}}>       <Button ><span className="child">Categories</span></Button>            </Link>
-        
-        <Link to="#" >
-            <Button >
-                <ul className="nav navbar-nav navbar-right">
-                    <li className="dropdown">
-                
-                    <p className="noti">{cart.cartTotalQuantity}</p>
-                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" > <FontAwesomeIcon className="carticon" icon={faCartPlus}/></a>
-                   
-                    <ul className="dropdown-menu dropdown-cart" role="menu">
-                        {cart.cartItems.map(item =><li>
-                            <span className="item">
-                                <span className="item-left">
-                                    <img src={item.image} alt={item.image} />
-                                    <span className="item-info">
-                                        <span>{item.title}</span>
-                                        <span className="itemprice">{item.price} $</span>
-                                    </span>
-                                </span>
-                                <span className="item-right">
-                                    <div>
-                                    <button onClick={()=>{handleDecrease(item)}} className="countbtn">-</button>
-                                    <button className="amount">{item.cartQuantity} </button>
-                                    <button onClick={()=>{handleIncrease(item)}} className="countbtn">+</button>
-                                    </div>
-                                    <button onClick={()=>{handleRemove(item)}} className="btn btn-xs btn-danger pull-right xbtn">X</button>
-                                </span>
-                            </span>
-                        </li>)}
+            <ButtonGroup className="group" variant="text" aria-label="large outlined primary button group">
+            <Link to="/"                style={{textDecorationLine:"none"}} >              <Button ><span className="child"  >Home</span></Button>               </Link>
+            <Link to="products/category"        style={{textDecorationLine:"none"}}>       <Button ><span className="child">Categories</span></Button>            </Link>
+            
+            <div class="dropdown">
+              
+              {/* <button class="btn btn-secondary dropdown-toggle cartbtn" type="button" id="dropdownMenu2" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"> */}
+              <button class="btn btn-secondary dropdown-toggle cartbtn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+              <FontAwesomeIcon className="carticon" icon={faCartPlus}/>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+             
+                  {cart.cartItems.map(item =><div class="px-4 py-3" onSubmit={e=>{e.preventDefault()}}>
+                    <div class="form-group divitem">
+                        <img className="itemimg" src={item.image}></img>
+                        <div className="item-info">{item.title}</div>
+                        <button type="submit" className="addbtn" onClick={()=>{handleDecrease(item)}} >-</button>
+                        <div className="item-text">{item.cartQuantity}</div>
+                        <button type="submit" className="addbtn" onClick={()=>{handleIncrease(item)}}>+</button>
+                        <button type="submit" className="xbtn" onClick={()=>{handleRemove(item)}}>x</button>
                         
-                        <li className="divider"></li>
-                        <li>TOTAL: {cart.cartTotalAmount}</li>
-                        <li><Link to="/cart"><button  className="text-center checkoutbtn" >Check Out</button></Link></li>
-                    </ul>
-                    </li>
-                </ul>
-            </Button>
-        </Link>
-        <div className="welcomemess">Welcome, {user.name} </div>
-        <Link to="#">               <Button ><span  className="child"><FontAwesomeIcon icon={faUserCircle}/> </span></Button></Link>
+                    </div>
+                </div>  )}
+                <div>TOTAL: {cart.cartTotalAmount}</div>
+                <Link to="/cart"><button className="checkoutbtn">Check Out</button></Link>
+                </div>
+                </div>
+              <div className="welcomemess">Welcome, {user.name} </div>
+              <Link to="#">               <Button ><span  className="child"><FontAwesomeIcon icon={faUserCircle}/> </span></Button></Link>
         
         </ButtonGroup>
    
