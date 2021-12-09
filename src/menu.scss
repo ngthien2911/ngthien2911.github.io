@@ -201,3 +201,17 @@ ul.dropdown-cart li .item-right button{
     border-radius: 20px;
     margin: 0% 4%;
 }
+
+.numbericon{
+    position: absolute;
+    border: solid white 2px; 
+    font-size: 1rem;
+    border-radius: 50%;
+    
+    width: 1.5em;
+    background-color: #83bda2;
+    color: black;
+    display: inline-block;
+    
+    transform: translate(-20%, -40%);
+}

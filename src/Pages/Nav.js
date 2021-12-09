@@ -76,6 +76,7 @@ function Nav(props) {
               {/* <button class="btn btn-secondary dropdown-toggle cartbtn" type="button" id="dropdownMenu2" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"> */}
               <button class="btn btn-secondary dropdown-toggle cartbtn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
               <FontAwesomeIcon className="carticon" icon={faCartPlus}/>
+              <p className="numbericon">{cart.cartTotalQuantity}</p>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
              
