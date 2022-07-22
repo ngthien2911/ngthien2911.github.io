@@ -1,4 +1,7 @@
-.logo_custom{
-margin-left: 50%;
-border-radius: 10px;
+#header .logo-inner{
+height: 100%;
+    display: flex;
+    align-items: flex-end;
+    max-height: 100px;
+    width: 150px;
 }
